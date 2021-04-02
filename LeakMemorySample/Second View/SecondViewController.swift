@@ -19,8 +19,11 @@ class SecondViewController: UIViewController {
         self.bindViewModel()
     }
 
+    /// Make bind view model
     private func bindViewModel() {
         viewModel = SecondViewModel()
+
+        // Uncomment to capture
         viewModel.needClosure = {//[weak self] in
 //            self?.view.backgroundColor = UIColor.random()
             self.view.backgroundColor = UIColor.random()

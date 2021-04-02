@@ -9,7 +9,7 @@ import Foundation
 
 class SecondViewModel {
     var needClosure: (() -> Void)?
-    private var showLockPopupTimer: Timer?
+    private var dumpAPITimeoutTimer: Timer?
     var dumData: [Int] = []
 
     init() {
@@ -21,13 +21,14 @@ class SecondViewModel {
             }
         }
     }
+
+    /// Request dump API
     func requestDumpAPI() {
         // Make time out to fake api time out request
-        showLockPopupTimer?.invalidate()
-        showLockPopupTimer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true, block: { [weak self] _ in
+        dumpAPITimeoutTimer?.invalidate()
+        dumpAPITimeoutTimer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true, block: { [weak self] _ in
             guard let strongSelf = self else { return }
             strongSelf.needClosure?()
         })
     }
-    
 }
