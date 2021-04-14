@@ -7,9 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22B28C2F2626B36B004BD752 /* FirstTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B28C2D2626B36B004BD752 /* FirstTableViewCell.swift */; };
+		22B28C302626B36B004BD752 /* FirstTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22B28C2E2626B36B004BD752 /* FirstTableViewCell.xib */; };
+		22B28C332626B3D1004BD752 /* FirstViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B28C322626B3D1004BD752 /* FirstViewModel.swift */; };
+		22B28C392626B68C004BD752 /* SingletonLeakViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B28C372626B68C004BD752 /* SingletonLeakViewController.swift */; };
+		22B28C3A2626B68C004BD752 /* SingletonLeakViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22B28C382626B68C004BD752 /* SingletonLeakViewController.xib */; };
+		22B28C3E2626B842004BD752 /* AlertViewHandleLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B28C3D2626B842004BD752 /* AlertViewHandleLogic.swift */; };
 		22F07C7F26168F750061436F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F07C7E26168F750061436F /* AppDelegate.swift */; };
 		22F07C8126168F750061436F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F07C8026168F750061436F /* SceneDelegate.swift */; };
-		22F07C8326168F750061436F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F07C8226168F750061436F /* ViewController.swift */; };
+		22F07C8326168F750061436F /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F07C8226168F750061436F /* FirstViewController.swift */; };
 		22F07C8626168F750061436F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22F07C8426168F750061436F /* Main.storyboard */; };
 		22F07C8826168F760061436F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22F07C8726168F760061436F /* Assets.xcassets */; };
 		22F07C8B26168F760061436F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22F07C8926168F760061436F /* LaunchScreen.storyboard */; };
@@ -21,10 +27,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		22B28C2D2626B36B004BD752 /* FirstTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTableViewCell.swift; sourceTree = "<group>"; };
+		22B28C2E2626B36B004BD752 /* FirstTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstTableViewCell.xib; sourceTree = "<group>"; };
+		22B28C322626B3D1004BD752 /* FirstViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewModel.swift; sourceTree = "<group>"; };
+		22B28C372626B68C004BD752 /* SingletonLeakViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingletonLeakViewController.swift; sourceTree = "<group>"; };
+		22B28C382626B68C004BD752 /* SingletonLeakViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SingletonLeakViewController.xib; sourceTree = "<group>"; };
+		22B28C3D2626B842004BD752 /* AlertViewHandleLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewHandleLogic.swift; sourceTree = "<group>"; };
 		22F07C7B26168F750061436F /* LeakMemorySample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeakMemorySample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22F07C7E26168F750061436F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		22F07C8026168F750061436F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		22F07C8226168F750061436F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		22F07C8226168F750061436F /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		22F07C8526168F750061436F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		22F07C8726168F760061436F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		22F07C8A26168F760061436F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +59,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		22B28C2A2626B31E004BD752 /* First View */ = {
+			isa = PBXGroup;
+			children = (
+				22B28C2C2626B35E004BD752 /* Cell */,
+				22F07C8426168F750061436F /* Main.storyboard */,
+				22F07C8226168F750061436F /* FirstViewController.swift */,
+				22B28C322626B3D1004BD752 /* FirstViewModel.swift */,
+			);
+			path = "First View";
+			sourceTree = "<group>";
+		};
+		22B28C2C2626B35E004BD752 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				22B28C2D2626B36B004BD752 /* FirstTableViewCell.swift */,
+				22B28C2E2626B36B004BD752 /* FirstTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		22B28C362626B66F004BD752 /* Singleton Leak View */ = {
+			isa = PBXGroup;
+			children = (
+				22B28C3C2626B7E2004BD752 /* SingletonClass */,
+				22B28C372626B68C004BD752 /* SingletonLeakViewController.swift */,
+				22B28C382626B68C004BD752 /* SingletonLeakViewController.xib */,
+			);
+			path = "Singleton Leak View";
+			sourceTree = "<group>";
+		};
+		22B28C3C2626B7E2004BD752 /* SingletonClass */ = {
+			isa = PBXGroup;
+			children = (
+				22B28C3D2626B842004BD752 /* AlertViewHandleLogic.swift */,
+			);
+			path = SingletonClass;
+			sourceTree = "<group>";
+		};
 		22F07C7226168F750061436F = {
 			isa = PBXGroup;
 			children = (
@@ -66,12 +116,12 @@
 		22F07C7D26168F750061436F /* LeakMemorySample */ = {
 			isa = PBXGroup;
 			children = (
+				22B28C362626B66F004BD752 /* Singleton Leak View */,
+				22B28C2A2626B31E004BD752 /* First View */,
 				22F07C9E261695220061436F /* Extension */,
-				22F07C94261690980061436F /* Second View */,
+				22F07C94261690980061436F /* Slosure Leak View */,
 				22F07C7E26168F750061436F /* AppDelegate.swift */,
 				22F07C8026168F750061436F /* SceneDelegate.swift */,
-				22F07C8226168F750061436F /* ViewController.swift */,
-				22F07C8426168F750061436F /* Main.storyboard */,
 				22F07C8726168F760061436F /* Assets.xcassets */,
 				22F07C8926168F760061436F /* LaunchScreen.storyboard */,
 				22F07C8C26168F760061436F /* Info.plist */,
@@ -79,14 +129,14 @@
 			path = LeakMemorySample;
 			sourceTree = "<group>";
 		};
-		22F07C94261690980061436F /* Second View */ = {
+		22F07C94261690980061436F /* Slosure Leak View */ = {
 			isa = PBXGroup;
 			children = (
 				22F07C96261692090061436F /* SecondViewController.swift */,
 				22F07C97261692090061436F /* SecondViewController.xib */,
 				22F07C9B2616941F0061436F /* SecondViewModel.swift */,
 			);
-			path = "Second View";
+			path = "Slosure Leak View";
 			sourceTree = "<group>";
 		};
 		22F07C9E261695220061436F /* Extension */ = {
@@ -155,6 +205,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22B28C302626B36B004BD752 /* FirstTableViewCell.xib in Resources */,
+				22B28C3A2626B68C004BD752 /* SingletonLeakViewController.xib in Resources */,
 				22F07C99261692090061436F /* SecondViewController.xib in Resources */,
 				22F07C8B26168F760061436F /* LaunchScreen.storyboard in Resources */,
 				22F07C8826168F760061436F /* Assets.xcassets in Resources */,
@@ -172,10 +224,14 @@
 				22F07C98261692090061436F /* SecondViewController.swift in Sources */,
 				22F07CA1261695440061436F /* UIColor+Extensions.swift in Sources */,
 				22F07CA2261695440061436F /* CGFloat+Extensions.swift in Sources */,
-				22F07C8326168F750061436F /* ViewController.swift in Sources */,
+				22F07C8326168F750061436F /* FirstViewController.swift in Sources */,
 				22F07C7F26168F750061436F /* AppDelegate.swift in Sources */,
+				22B28C3E2626B842004BD752 /* AlertViewHandleLogic.swift in Sources */,
 				22F07C9C2616941F0061436F /* SecondViewModel.swift in Sources */,
+				22B28C2F2626B36B004BD752 /* FirstTableViewCell.swift in Sources */,
+				22B28C332626B3D1004BD752 /* FirstViewModel.swift in Sources */,
 				22F07C8126168F750061436F /* SceneDelegate.swift in Sources */,
+				22B28C392626B68C004BD752 /* SingletonLeakViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

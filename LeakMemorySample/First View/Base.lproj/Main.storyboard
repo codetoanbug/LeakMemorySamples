@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="IOG-s2-2NL">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -12,47 +10,42 @@
         <!--Leak memory Sample-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LeakMemorySample" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="FirstViewController" customModule="LeakMemorySample" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jyi-SR-wCw">
-                                <rect key="frame" x="135" y="138" width="144" height="35"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="35" id="F27-PN-V12"/>
-                                </constraints>
-                                <state key="normal" title="Open Second screen"/>
-                                <connections>
-                                    <action selector="onButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nds-EH-nHq"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="codetoanbug.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rXd-ge-6hX">
-                                <rect key="frame" x="137.5" y="271" width="139" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="codebug" translatesAutoresizingMaskIntoConstraints="NO" id="oyi-kS-IDN">
-                                <rect key="frame" x="132" y="312" width="150" height="150"/>
+                                <rect key="frame" x="260" y="44" width="80" height="80"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="oyi-kS-IDN" secondAttribute="height" id="69U-Jv-giY"/>
-                                    <constraint firstAttribute="width" constant="150" id="XMc-3h-dHx"/>
+                                    <constraint firstAttribute="width" secondItem="oyi-kS-IDN" secondAttribute="height" multiplier="1:1" id="5qf-GP-AaR"/>
+                                    <constraint firstAttribute="width" constant="80" id="lKe-4W-UJz"/>
                                 </constraints>
                             </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fka-gx-qCz">
+                                <rect key="frame" x="0.0" y="124" width="600" height="476"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="5xW-oJ-40s"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="gzi-Fu-JBP"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="rXd-ge-6hX" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="HnF-1l-ecT"/>
-                            <constraint firstItem="Jyi-SR-wCw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="RNs-tS-BZM"/>
-                            <constraint firstItem="rXd-ge-6hX" firstAttribute="top" secondItem="Jyi-SR-wCw" secondAttribute="bottom" constant="98" id="ddG-RY-fuM"/>
-                            <constraint firstItem="Jyi-SR-wCw" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="uO9-ze-JiC"/>
-                            <constraint firstItem="oyi-kS-IDN" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="urR-kF-Ekm"/>
-                            <constraint firstItem="oyi-kS-IDN" firstAttribute="top" secondItem="rXd-ge-6hX" secondAttribute="bottom" constant="20" id="yWH-mb-EBB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fka-gx-qCz" secondAttribute="bottom" id="2Er-Um-wmO"/>
+                            <constraint firstItem="oyi-kS-IDN" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="4qH-jP-pQP"/>
+                            <constraint firstItem="oyi-kS-IDN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Jlq-8T-aGv"/>
+                            <constraint firstItem="fka-gx-qCz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Kdi-8m-f6Z"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fka-gx-qCz" secondAttribute="trailing" id="YmY-S4-YOy"/>
+                            <constraint firstItem="fka-gx-qCz" firstAttribute="top" secondItem="oyi-kS-IDN" secondAttribute="bottom" id="hsD-VF-fHY"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Leak memory Sample" id="yT7-21-8op"/>
+                    <connections>
+                        <outlet property="tableView" destination="fka-gx-qCz" id="psf-p4-puq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
