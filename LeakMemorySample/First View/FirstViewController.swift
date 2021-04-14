@@ -7,7 +7,7 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class FirstViewController: BaseViewController {
     @IBOutlet weak var tableView: UITableView!
     var viewModel: FirstViewModel!
 

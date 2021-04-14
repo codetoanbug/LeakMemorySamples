@@ -7,12 +7,17 @@
 
 import UIKit
 
-class SingletonLeakViewController: UIViewController {
+class SingletonLeakViewController: BaseViewController {
     var alertViewHandleLogic: AlertViewHandleLogic!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        alertViewHandleLogic = AlertViewHandleLogic()
+        alertViewHandleLogic = AlertViewHandleLogic.shared
+        alertViewHandleLogic.needShowAlertView = { [weak self] in
+            print("need show here")
+        }
+
+        alertViewHandleLogic.resetShowAlertTimer()
     }
 
 }
