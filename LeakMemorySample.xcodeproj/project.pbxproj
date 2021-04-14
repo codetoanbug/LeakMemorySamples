@@ -14,6 +14,7 @@
 		22B28C3A2626B68C004BD752 /* SingletonLeakViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22B28C382626B68C004BD752 /* SingletonLeakViewController.xib */; };
 		22B28C3E2626B842004BD752 /* AlertViewHandleLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B28C3D2626B842004BD752 /* AlertViewHandleLogic.swift */; };
 		22B28C412626C117004BD752 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B28C402626C117004BD752 /* BaseViewController.swift */; };
+		22B28C472626D1CC004BD752 /* UIApplication+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B28C462626D1CC004BD752 /* UIApplication+Extensions.swift */; };
 		22F07C7F26168F750061436F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F07C7E26168F750061436F /* AppDelegate.swift */; };
 		22F07C8126168F750061436F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F07C8026168F750061436F /* SceneDelegate.swift */; };
 		22F07C8326168F750061436F /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F07C8226168F750061436F /* FirstViewController.swift */; };
@@ -35,6 +36,7 @@
 		22B28C382626B68C004BD752 /* SingletonLeakViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SingletonLeakViewController.xib; sourceTree = "<group>"; };
 		22B28C3D2626B842004BD752 /* AlertViewHandleLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewHandleLogic.swift; sourceTree = "<group>"; };
 		22B28C402626C117004BD752 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		22B28C462626D1CC004BD752 /* UIApplication+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extensions.swift"; sourceTree = "<group>"; };
 		22F07C7B26168F750061436F /* LeakMemorySample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeakMemorySample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22F07C7E26168F750061436F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		22F07C8026168F750061436F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 				22F07C8726168F760061436F /* Assets.xcassets */,
 				22F07C8926168F760061436F /* LaunchScreen.storyboard */,
 				22F07C8C26168F760061436F /* Info.plist */,
+				22B28C462626D1CC004BD752 /* UIApplication+Extensions.swift */,
 			);
 			path = LeakMemorySample;
 			sourceTree = "<group>";
@@ -236,6 +239,7 @@
 				22F07CA1261695440061436F /* UIColor+Extensions.swift in Sources */,
 				22F07CA2261695440061436F /* CGFloat+Extensions.swift in Sources */,
 				22F07C8326168F750061436F /* FirstViewController.swift in Sources */,
+				22B28C472626D1CC004BD752 /* UIApplication+Extensions.swift in Sources */,
 				22F07C7F26168F750061436F /* AppDelegate.swift in Sources */,
 				22B28C412626C117004BD752 /* BaseViewController.swift in Sources */,
 				22B28C3E2626B842004BD752 /* AlertViewHandleLogic.swift in Sources */,

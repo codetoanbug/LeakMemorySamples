@@ -39,5 +39,6 @@ class SingletonLeakViewController: BaseViewController {
 extension SingletonLeakViewController: AlertViewHandleLogicDelegate {
     func needShowAlertView(sender: AlertViewHandleLogic) {
         print("need show here")
+        self.showAlert()
     }
 }
